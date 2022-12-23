@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733466711739",
+    "project_id": "resaapp-e0851",
+    "storage_bucket": "resaapp-e0851.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733466711739:android:0624ae598c3aef3788fb9e",
+        "android_client_info": {
+          "package_name": "com.example.resa_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733466711739-kklae0hsqdcnrb6i0qgdm9n8igtj8agh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.resa_app",
+            "certificate_hash": "eb04b52f433316daff5ba27adeddd3fa356e2a0e"
+          }
+        },
+        {
+          "client_id": "733466711739-rtfmf5s29fnh0tfu6bvqifgq2t6kdkth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiULcG7WyMN8xCXeV_eOIZ_zYthk4SKkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733466711739-rtfmf5s29fnh0tfu6bvqifgq2t6kdkth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
