@@ -1,6 +1,5 @@
 package com.example.resa_app
 
-import ShPref
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,9 +18,9 @@ class ActivityLogin : AppCompatActivity() {
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
 
-//        if(ShPref.instance.getEmail() != "" && ShPref.instance.getPassword() != ""){
-//            loginFirebase(ShPref.instance.getEmail(), ShPref.instance.getPassword())
-//        }
+        if(ShPref.instance.getEmail() != "" && ShPref.instance.getPassword() != ""){
+            loginFirebase(ShPref.instance.getEmail(), ShPref.instance.getPassword())
+        }
 
         binding.tvToRegister.setOnClickListener{
             val intent = Intent(this, ActivityRegister::class.java)

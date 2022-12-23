@@ -1,3 +1,5 @@
+package com.example.resa_app
+
 import android.app.Application
 import android.content.SharedPreferences
 

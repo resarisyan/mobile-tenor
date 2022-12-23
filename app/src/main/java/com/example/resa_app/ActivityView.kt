@@ -1,6 +1,7 @@
 package com.example.resa_app
 
 import android.content.ContentValues
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -49,17 +50,25 @@ class ActivityView : AppCompatActivity() {
         val editNominal = binding.edtNominal.text
         val editTenor = binding.edtTenor.text
 
-//        db.collection("Kredits").document().toString()
-//            .update(mapOf(
-//                "Nominal" to editNominal.toString(),
-//                "Tenor" to editTenor.toString(),
-//                "Angsuran" to editNominal.toString(),
-//            ))
-//            .addOnSuccessListener{
-//                Log.d(TAG, "Document Update!")
-//                Toast.makeText(this, "Data Berhasil Diupdate",
-//                Toast.LENGTH_SHORT).show()
-//            }
+        db.collection("Kredits").document(intent.getStringExtra("idDoc").toString())
+            .update(mapOf(
+                "Nominal" to editNominal.toString(),
+                "Tenor" to editTenor.toString(),
+                "Angsuran" to editNominal.toString(),
+            ))
+            .addOnSuccessListener{
+                Log.d(TAG, "Document Update!")
+                Toast.makeText(this, "Data Berhasil Diupdate",
+                Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this, ActivityTambah::class.java)
+                startActivity(intent)
+            }
+            .addOnFailureListener{
+                e -> Log.w(TAG, "Error Updating", e)
+            }
+        val intent = Intent(this, ActivityView::class.java)
+        startActivity(intent)
     }
 
     fun delete()
