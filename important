@@ -1,0 +1,2 @@
+emulator -avd Nexus_5X_API_24 -dns-server 8.8.8.8
+C:\Users\PC Dasar-10\AppData\Local\Android\Sdk\emulator
